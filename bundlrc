@@ -1,0 +1,68 @@
+# keywords:
+#   use: - use framework
+#   on: - if condition
+#   from: - ?
+#   as: - as theme/bundle
+use: oh-my-zsh
+
+# Bundles
+rupa/z@master
+desyncr/key-bindings
+reem/watch@master
+zsh-users/zsh-syntax-highlighting@0.5.*
+#zdharma/fast-syntax-highlighting
+zsh-users/zsh-autosuggestions@master # do not use develop
+zsh-users/zsh-completions
+psprint/zsh-navigation-tools
+#desyncr/gitr@develop
+psprint/zsh-select                   # required by zsh-ctrlp
+garybernhardt/selecta@v0.0.*
+desyncr/zsh-ctrlp@develop
+desyncr/zsh-icdiff
+#Vifon/deer deer
+hlissner/zsh-autopair
+supercrabtree/k@0.*
+per-directory-history
+LuRsT/hr
+ddollar/git-utils                    # various git utilities
+git://repo.or.cz/safe-rm.git         # Just kill me
+docker
+arzzen/calc.plugin.zsh
+
+use: oh-my-zsh {
+    desyncr/auto-ls
+}
+
+# experimental antigen search command
+https://gist.github.com/desyncr/e19af22b00fb1498d9836094e13d6ddb
+
+desyncr/void void on:linux as:theme
+
+on: darwin {
+    bhilburn/powerlevel9k as:theme
+    use: other {
+        desyncr/geometry-datetime
+    }
+}
+
+---
+
+on: zsh {
+
+}
+on: bash {
+
+}
+
+on: tty {
+
+}
+
+with: git {
+
+}
+
+host: *sdsd* {
+
+}
+

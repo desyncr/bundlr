@@ -1,0 +1,44 @@
+on: darwin {
+    bhilburn/powerlevel9k as:theme
+    use: other {
+        desyncr/geometry-datetime
+    }
+
+    as: theme {
+        bhilburn/powerlevel7k
+        bhilburn/powerlevel8k
+    }
+}
+
+---
+LexItem {
+    kind: Keyword, instruction: On, args: "darwin", line: "on: darwin {",
+    child: [
+        LexItem {
+            kind: Bundle, instruction: String, args: "", line: "bhilburn/powerlevel9k as:theme", child: []
+        },
+        LexItem {
+            kind: Keyword, instruction: Use, args: "other", line: "use: other {",
+            child: [
+                LexItem {
+                    kind: Bundle, instruction: String, args: "", line: "desyncr/geometry-datetime", child: []
+                }
+            ]
+        },
+        LexItem {
+            kind: Blank, instruction: String, args: "", line: "", child: []
+        },
+        LexItem {
+            kind: Keyword, instruction: As, args: "theme", line: "as: theme {",
+            child: [
+                LexItem {
+                    kind: Bundle, instruction: String, args: "", line: "bhilburn/powerlevel7k", child: []
+                },
+                LexItem {
+                    kind: Bundle, instruction: String, args: "", line: "bhilburn/powerlevel8k", child: []
+                }
+            ]
+        }
+    ]
+}
+

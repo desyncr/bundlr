@@ -1,0 +1,17 @@
+- Parse bundle:
+    example/bundle as:theme on:darwin,zsh from:gitlab main:other.zsh
+
+    ->  kind: bundle
+        modifiers:
+            - as: theme (load as theme)
+            - on: darwin (if running osx)
+            - from: gitlab (use gitlab)
+            - main: other.zsh (load other.zsh)
+            - on: zsh (if shell == zsh)
+
+* on: if os == ? || shell == ? &&
+
+- Add tests suite
+- Revise project file structure
+- CLI tool with argument parsing
+- Lockfile, semver, commands: install, update, check
