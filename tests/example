@@ -36,7 +36,10 @@ use: oh-my-zsh {
 # experimental antigen search command
 https://gist.github.com/desyncr/e19af22b00fb1498d9836094e13d6ddb
 
-desyncr/void void on:linux as:theme
+desyncr/void void on:linux on:osx with:git,zsh with:git,bash as:theme
+# OR for multiple conditions, AND for multiple conditions' arguments:
+# on:... OR on:...
+# on:zsh AND bash
 
 on: darwin {
     bhilburn/powerlevel9k as:theme
@@ -48,21 +51,23 @@ on: darwin {
 ---
 
 on: zsh {
-
+    zsh-users/zsh-highlight
 }
+
 on: bash {
+    example/bashism
+    example/bash-pkg
+}
+
+on: tty { # interactive shell
 
 }
 
-on: tty {
+with: git { # has `git` installed
 
 }
 
-with: git {
-
-}
-
-host: *sdsd* {
+host: *sdsd* { # matches hosts' name
 
 }
 
