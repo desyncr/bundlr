@@ -1,4 +1,4 @@
-# Bundlr
+# Bundlr [![Build Status](https://travis-ci.org/desyncr/bundlr.svg?branch=master)](https://travis-ci.org/desyncr/bundlr)
 
 Fun project to play with Rust. It's supposely a package manager for sh/bash/zsh etc shells (scripts, binary tools, etc).
 It supports a custom configuration language (see below).
