@@ -1,7 +1,6 @@
 # keywords:
-#   use: - use framework
+#   from | use: - use framework
 #   on: - if condition
-#   from: - ?
 #   as: - as theme/bundle
 from: oh-my-zsh {
     docker
