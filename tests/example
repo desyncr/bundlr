@@ -3,7 +3,9 @@
 #   on: - if condition
 #   from: - ?
 #   as: - as theme/bundle
-from: oh-my-zsh
+from: oh-my-zsh {
+    docker
+}
 
 # Bundles
 rupa/z@master
@@ -26,7 +28,6 @@ per-directory-history
 LuRsT/hr
 ddollar/git-utils                    # various git utilities
 git://repo.or.cz/safe-rm.git         # Just kill me
-docker
 arzzen/calc.plugin.zsh
 
 use: oh-my-zsh {
